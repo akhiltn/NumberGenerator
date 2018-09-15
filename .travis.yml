@@ -11,3 +11,6 @@ deploy:
   skip_cleanup: true
   on:
     repo: akhiltn/NumberGenerator
+    branches:    # ← new!
+      only:      # ← new!
+        - master # ← new!
