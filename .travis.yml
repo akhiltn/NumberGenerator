@@ -1,6 +1,11 @@
 language: java
+before_deploy:
+      # Set up git user name and tag this commit
+      - git config --local user.name "akhiltn"
+      - git config --local user.email "tnakhil@gmail.com"
+      - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
 deploy:
   provider: releases
-  api_key: "9448dbd14f1222834072e7b2551c466b33f7e967"
+  api_key: "dc4f1350e3eaa192377aa89a54e7a946b570c0ae"
   file: "target/NumberGenerator*.jar"
   skip_cleanup: true
