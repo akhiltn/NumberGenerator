@@ -1,6 +1,6 @@
 language: java
 deploy:
   provider: releases
-  api_key: "$GH_TOKEN"
+  api_key: "9448dbd14f1222834072e7b2551c466b33f7e967"
   file: "target/NumberGenerator*.jar"
   skip_cleanup: true
