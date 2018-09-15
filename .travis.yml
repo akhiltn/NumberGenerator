@@ -6,6 +6,7 @@ before_deploy:
       - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
 deploy:
   provider: releases
-  api_key: "dc4f1350e3eaa192377aa89a54e7a946b570c0ae"
+  user: "akhiltn"
+  password: "aki701107"
   file: "target/NumberGenerator*.jar"
   skip_cleanup: true
